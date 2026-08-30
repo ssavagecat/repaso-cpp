@@ -1,0 +1,20 @@
+1. p1.cpp:9:7: error: expected initializer before 'origen'
+    Compilador, sintaxis. Una declaración anterior no terminó: 
+    falta el punto y coma después de la llave que cierra una clase, 
+    arriba de la línea en el compilador se dio cuenta del error. 
+
+2. /usr/bin/ld: undefined reference to `Cuenta::depositar(double)'
+    Enlazador. El cuerpo de depositar no existe, o su .cpp no se pasó al comando, 
+    o la firma del .cpp no coincide con la del header.
+
+3. p3.cpp:6:24: error: cannot convert 'std::string' to 'int'
+    Compilador, tipos. Se llamó una función que espera int con un std::string. 
+    La note siguiente indica qué parámetro es.
+
+4. p4.cpp:3:10: error: 'vector' is not a member of 'std'
+    Compilador, nombre no declarado. Falta #include <vector>. 
+    Los errores posteriores sobre la variable son eco.
+
+5. /usr/bin/ld: multiple definition of `doble(int)'
+    Enlazador. El cuerpo de doble está en un header incluido por dos .cpp. 
+    Dejar la declaración en el header y el cuerpo en un .cpp, o marcarla inline.
