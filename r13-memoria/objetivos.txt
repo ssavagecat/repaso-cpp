@@ -1,0 +1,9 @@
+Objetivos de R13
+===========================================================================================================
+- Reservar y liberar memoria con new/delete y new[]/delete[], sin confundir las parejas.
+- Explicar por qué una clase que guarda un puntero necesita destructor, constructor de copia y operator=.
+- Reconocer un doble delete y una fuga leyendo la salida de -fsanitize=address.
+- Escribir la regla de tres completa para una clase con memoria propia.
+
+Esta es la sesión que más peso tiene en lo que sigue: las listas encadenadas, 
+los árboles y los grafos del curso son casos particulares de este mismo problema.
