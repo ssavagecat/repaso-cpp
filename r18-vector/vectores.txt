@@ -1,0 +1,12 @@
+std::vector<int> a;           // vacío
+std::vector<int> b(5);        // 5 ceros
+std::vector<int> c(5, 7);     // 5 sietes
+std::vector<int> d{1, 2, 3};  // esos 3
+std::vector<int> e(d);        // copia de d
+d.push_back(4);               // agrega al final
+d.pop_back();                 // quita el último
+d[0] = 99;                    // acceso indexado
+d.front();                    // primer elemento
+d.back();                     // último
+d.size();                     // cuántos hay
+d.empty();                    // ¿ninguno?
